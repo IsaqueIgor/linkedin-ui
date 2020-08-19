@@ -1,15 +1,10 @@
 import styled, { css } from 'styled-components';
 import { BsPencilSquare } from 'react-icons/bs';
-import {
-  AiOutlineCamera,
-  AiOutlineVideoCamera,
-  AiOutlineFileText,
-  AiOutlineProfile,
-} from 'react-icons/ai';
+import { FiSend, FiImage, FiFilm, FiPaperclip } from 'react-icons/fi';
 
 export const Container = styled.div`
   color: var(--color-gray);
-
+  border-style: none;
   .write {
     display: flex;
     align-items: center;
@@ -17,9 +12,35 @@ export const Container = styled.div`
 
     > span {
       margin-left: 8px;
+      font-size: 14px;
       font-weight: 600;
+      color: #181818;
     }
   }
+  .secondrow {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+
+    h3 {
+      margin-top: 6px;
+      margin-left: 24px;
+      font-size: 12px;
+      color: rgba(24, 24, 24, 0.2);
+    }
+  }
+
+  .send {
+    display: flex;
+    background: #0077b5;
+    height: 26px;
+    width: 26px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 2px -1px gray;
+  }
+
   .attachment {
     display: none;
 
@@ -29,55 +50,71 @@ export const Container = styled.div`
       justify-content: space-between;
       height: 100%;
       padding: 0 24px;
-      border-top: 1px solid var(--color-separator);
 
       button {
         display: flex;
-        padding: 16px;
-        height: 100%;
+        padding: 8px;
+        height: 60%;
         align-items: center;
         background: none;
         border: none;
+        border-radius: 4px;
         color: var(--color-gray);
         font-weight: 600;
+        outline: none;
 
         cursor: pointer;
         &:hover,
         &:focus {
           background: rgba(0, 0, 0, 0.05);
         }
+
+        /* &.send {
+          background: #0077b5;
+          height: 32px;
+          width: 32px;
+          border-radius: 4px;
+        } */
       }
     }
   }
 `;
 
+export const Separator = styled.div`
+  width: 60%;
+  margin-left: 20%;
+  height: 1px;
+  border-top: 1px solid var(--color-separator);
+`;
+
 export const WriteIcon = styled(BsPencilSquare)`
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
 `;
 
 const iconCSS = css`
-  width: 24px;
-  height: 24px;
-  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
 `;
 
-export const CameraIcon = styled(AiOutlineCamera)`
+export const CameraIcon = styled(FiImage)`
   ${iconCSS}
-  color: #33aada;
+  color: #c7c7c7;
 `;
 
-export const VideoCameraIcon = styled(AiOutlineVideoCamera)`
+export const VideoCameraIcon = styled(FiFilm)`
   ${iconCSS}
-  color: #9896f2;
+  color: #c7c7c7;
 `;
 
-export const DocumentIcon = styled(AiOutlineFileText)`
+export const DocumentIcon = styled(FiPaperclip)`
   ${iconCSS}
-  color: #17afb8;
+  color: #c7c7c7;
 `;
 
-export const ArticleIcon = styled(AiOutlineProfile)`
+export const SendIcon = styled(FiSend)`
   ${iconCSS}
-  color: #ef7e37;
+  color: #FFF;
+  width: 16px;
 `;

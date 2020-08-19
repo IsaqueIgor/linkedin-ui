@@ -19,32 +19,32 @@ const FeedPost: React.FC = () => {
   return (
     <Panel>
       <Container>
-        <Row className="heading">
-          <Avatar src="https://i.imgur.com/81RtXfT.jpg" alt="Rocketseat" />
+        <Row className='heading'>
+          <Avatar src='https://i.imgur.com/81RtXfT.jpg' alt='Rocketseat' />
           <Column>
             <h3>Rocketseat</h3>
             <h4>Instituição de ensino</h4>
-            <time>1 sem</time>
+            <time>1 week</time>
           </Column>
         </Row>
 
         <PostImage
-          src="https://blog.rocketseat.com.br/content/images/2019/05/Painel.png"
-          alt="Rocketseat Blog"
+          src='https://blog.rocketseat.com.br/content/images/2019/05/Painel.png'
+          alt='Rocketseat Blog'
         />
 
-        <Row className="likes">
-          <span className="circle blue" />
-          <span className="circle green" />
-          <span className="circle red" />
-          <span className="number">49</span>
+        <Row className='likes'>
+          <span className='circle blue' />
+          <span className='circle green' />
+          <span className='circle red' />
+          <span className='number'>49</span>
         </Row>
 
         <Row>
           <Separator />
         </Row>
 
-        <Row className="actions">
+        <Row className='actions'>
           <button>
             <LikeIcon />
             <span>Gostei</span>

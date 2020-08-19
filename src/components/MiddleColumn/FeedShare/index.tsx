@@ -8,34 +8,39 @@ import {
   CameraIcon,
   VideoCameraIcon,
   DocumentIcon,
-  ArticleIcon,
+  Separator,
+  SendIcon,
 } from './styles';
 
 const FeedShare: React.FC = () => {
   return (
     <Panel>
       <Container>
-        <div className="write">
+        <div className='write'>
           <WriteIcon />
-          <span>Começar uma publicação</span>
+          <span>New Post</span>
         </div>
-        <div className="attachment">
-          <button>
-            <CameraIcon />
-            Foto
-          </button>
-          <button>
-            <VideoCameraIcon />
-            Video
-          </button>
-          <button>
-            <DocumentIcon />
-            Documento
-          </button>
-          <button>
-            <ArticleIcon />
-            Escrever artigo
-          </button>
+        <Separator />
+        <div className='secondrow'>
+          {/* <div> */}
+          <h3>What's in your mind?</h3>
+          {/* </div> */}
+          <div className='attachment'>
+            <button>
+              <CameraIcon />
+            </button>
+            <button>
+              <VideoCameraIcon />
+            </button>
+            <button>
+              <DocumentIcon />
+            </button>
+            <button>
+              <i className='send'>
+                <SendIcon />
+              </i>
+            </button>
+          </div>
         </div>
       </Container>
     </Panel>
