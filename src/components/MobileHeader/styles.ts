@@ -44,11 +44,11 @@ export const ButtonContainer = styled.div`
   cursor: pointer;
 
   &:hover {
-    color: var(--color-gray);
+    color: var(--color-link);
     transform: scale(1.1);
   }
   &.active {
-    border-bottom: 2px solid var(--color-gray);
+    border-bottom: 2px solid var(--color-link);
   }
 `;
 

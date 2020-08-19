@@ -23,7 +23,7 @@ export default createGlobalStyle`
     --color-background: #f5f5f5;
     --color-ad-text: #434649;
     --color-panel: #fff;
-    --color-link: #0073b1;
+    --color-link: #0275B1;
     --color-black: rgba(0,0,0,.9);
     --color-gray: rgba(0,0,0,.6);
     --color-separator: #F4F4F4;
