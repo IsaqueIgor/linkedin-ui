@@ -18,7 +18,7 @@ import {
   OtherIcon,
 } from './styles';
 
-const MobileHeader: React.FC = () => {
+const Header: React.FC = () => {
   return (
     <Container>
       <Logo>
@@ -70,4 +70,4 @@ const MobileHeader: React.FC = () => {
   );
 };
 
-export default MobileHeader;
+export default Header;
